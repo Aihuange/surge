@@ -1,3 +1,7 @@
+#!name=Sawacloud config
+#!desc=local sawacloud config.
+#!system=mac
+
 [Rule]
 DOMAIN-SUFFIX,openai.com,日本 01 (OpenAI解锁) - IPLC1中转
 DOMAIN-SUFFIX,ai.com,日本 01 (OpenAI解锁) - IPLC1中转
