@@ -1,11 +1,9 @@
-#!name=Barkapps
-#!desc= 利用Barkapp推送限免app，需要自己下载Bark并找到key填进argument
-# 持久化缓存每次获取的列表，每个app只会推送一次，持久化数据位置: uuidkey
-
-[MITM]
-hostname = %APPEND% barkapp.key.com
-[Script]
-# 跳转商店
-BarkappREQ = type=http-request,pattern=^https?:\/\/barkapp\.key\.com,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/surgepushBarkapps.js,requires-body=true
-# 定时获取
-Barkapps=type=cron,cronexp="0 10,21 * * *",wake-system=1,timeout=120,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/surgepushBarkapps.js,argument=
+[Rule]
+DOMAIN-SUFFIX,openai.com,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,ai.com,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,openaicom.imgix.net,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net,日本 01 (OpenAI解锁) - IPLC1中转
+DOMAIN-SUFFIX,sentry.io,日本 01 (OpenAI解锁) - IPLC1中转
